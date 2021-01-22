@@ -1,52 +1,21 @@
-# Hello World with Vanilla JS
+# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  HTML5 Form Validations
 
-Start coding in 30 seconds by opening this template in gitpod:
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git)
+After building the HTML and CSS for this form, we need to make sure it prevents the user from submitting a form with the wrong information or format, in web development we call that: Form Validations, you can read more [here](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
 
-### Manual Installation
+To prevent a form submission we have to listen to the "submit" event that is triggered by the form itself when the user presses either: the enter/return key or the submit button.
 
-1) Remember to install the npm packages first:
-```
-$ npm install
-```
+Here is a little more about preventing an event from occurring: [https://www.youtube.com/watch?v=I_fVO_NzT2g&t=401s](https://www.youtube.com/watch?v=I_fVO_NzT2g&t=401s)
 
-2) Build and Start coding!
+![Form Validations Preview](https://github.com/breatheco-de/exercise-html5-form-validations/blob/master/preview.gif?raw=true)
 
-Build the application for the first time...
+## Instructions
 
-```
-$ npm run start
-```
+After the user submits the form:
+1. Make sure to stop the flow of the submission using `preventDevault()`, [here is a little bit more about preventDefault()](https://www.youtube.com/watch?v=3SNyh57XSIA).
+2. After preventing the submission make sure all the input values are correct and properly formatted.
+3. If there are one or more inputs with an invalid value, show a clear error on the top of the form with a very explicit message about what happened.
+2. Change the background color of the relevant inputs (the ones with incorrect data).
 
-And start coding your Vanilla.js application, update the `src/index.html`, `src/index.scss` or `src/index.js` depending on your needs.
+## What to do if you are stuck?
 
-## FAQ
-
-#### 1) How do I run my code?
-
-- Type on the command line `$ npm run start` and type localhost on the browser.
-
-#### 2) Where do I write my code?
-It depends on the language, but you have `./src/js/index.js`, `./src/style/index.scss` and `./isrc/index.html` respectively, you can add new `.html` as you please, just make sure to include import it on the index.js.
-
-__Note:__ remember that the JS workflow starts inside `window.onload`.
-
-#### 3) I don't see my changes.
-
-Everytime you change any file inside the `./src` folder the website public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (command+shift+r on mac, control+shift+r on pc & linux)
-
-#### 4) How do I include more images on my project?
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
-
-#### 5) How do I include more JS files?
-Just add the files into the JS folder and import the file/variables into your index.js. E.g: `import myVar from "./file2.js"`
-
-#### 6) How do I publish the website?
-
-This boilerplate is 100% compatible with the free github pages hosting. Publish your website by running:
-```sh
-$ npm run deploy
-```
-
-Very easy and in just one step!  Push to your __master__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your master branch.
+Don't get frustrated and ask for help! After trying on your own for 20min, it is time to stop working and ask for help.
